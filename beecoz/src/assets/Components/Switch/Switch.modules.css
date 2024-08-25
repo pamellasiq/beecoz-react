@@ -54,4 +54,23 @@
       transform: translateX(22px); /* Move a bolinha para a direita quando ligado */
   }
 }
+@media screen and (min-width: 700px) and (max-width: 1100px){
 
+  .switch{
+    width: 50px;
+    height: 30px;
+  }
+
+  .switch-handle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .switch.off .switch-handle {
+    transform: translateX(3); /* Bolinha na posição inicial quando desligado */
+}
+
+  .switch.on .switch-handle {
+    transform: translateX(22px); /* Move a bolinha para a direita quando ligado */
+}
+}

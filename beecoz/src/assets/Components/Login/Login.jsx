@@ -28,7 +28,8 @@ function Login() {
                     </div>
                 </form>
                 <div className="register">
-                <p>Não tem uma conta? <a>Cadastre-se!</a></p>
+                <p>Não tem uma conta?</p>
+                <a>Cadastre-se!</a>
                 </div>
             </div>
     );

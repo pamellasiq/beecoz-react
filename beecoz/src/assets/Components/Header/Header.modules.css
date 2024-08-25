@@ -17,4 +17,28 @@
     .header .logo{
         width: 20%;
     }
+
+    @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      
+      .logo {
+        width: 20px; /* Ajuste conforme necessário */
+        animation: float 2s ease-in-out infinite;
+      }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px){
+    .header .logo{
+        width: 50%;
+    }
 }
