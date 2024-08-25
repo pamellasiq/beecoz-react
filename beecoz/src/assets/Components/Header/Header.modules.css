@@ -1,0 +1,20 @@
+.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 70px;
+    width: 100%;
+    transition: .6s;
+}
+
+
+@media screen and (min-width: 1100px){
+    .header .logo{
+        width: 20%;
+    }
+}

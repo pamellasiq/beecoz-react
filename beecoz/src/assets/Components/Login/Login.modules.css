@@ -1,0 +1,131 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-login{
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor:text;
+    background-color: #444444;
+    color: #AAAAAA;
+    padding: 14px 24px;
+    border-radius: 30px;
+}
+
+.input-login input{
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+}
+
+.remember-login {
+    width: 77%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-login a{
+    font-size: 10px;
+    color: #9FE4F4;
+}
+
+.remember-me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+
+.remember-me p{
+    font-size: 10px;
+    color: #fff;
+}
+
+.btn-login{
+    width: 80%;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    width: 80%;
+}
+
+.social{
+    width: 40%;
+    border-radius: 10px;
+    background-color: #444444;
+    color: #AAAAAA;
+
+}
+
+.register{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.register p{
+    font-size: small;
+    color: #AAAAAA;
+}
+
+.register a{
+    color: #9FE4F4;
+}
+
+
+@media screen and (min-width: 1100px) {
+
+    .form-login{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-login .input-login input{
+        font-size: 16px;
+    }
+
+    .remember-login p{
+        font-size: 16px;
+    }
+
+    .remember-login a{
+        font-size: 16px;
+    }
+
+    .btn-login{
+        font-size: 18px;
+    }
+
+    .register a, .register p{
+        font-size: 16px;
+    }
+
+}
