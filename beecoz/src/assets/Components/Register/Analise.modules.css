@@ -1,0 +1,30 @@
+.analise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.analise p{
+    width: 80%;
+    text-align: center;
+    color: #fff;
+}
+
+.analise .link-an{
+    width: 100%;
+    color: black;
+    transition: .6s;
+}
+
+.analise .link-an:hover{
+    color: #ecbc43;
+}
+
+@media screen and (min-width: 1100px) {
+    .analise p{
+        width: 30%;
+        font-size: 20px;
+    }
+}

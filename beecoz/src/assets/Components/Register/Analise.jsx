@@ -1,13 +1,16 @@
 import React from "react";
 import "./Analise.modules.css"
-import Header from "../Header/Header.modules.css"
+import Header from "../Header/Header"
+import { Link } from 'react-router-dom';
 
 function Analise() {
     return (
         <>
         <Header/>
-        <p>Os dados apresentados estão em análise, quando analisarmos estes, enviaremos uma mensagem ao e-mail informado no cadastro!</p>
-        <button><a href="../../../../index.html">Início</a></button>
+        <div className="analise">
+        <p>Os dados apresentados estão em análise, quando analisarmos estes, enviaremos uma mensagem ao email informado no cadastro!</p>
+        <button><Link to="/" className="link-an">Início</Link></button>
+        </div>
         </>
     );
 

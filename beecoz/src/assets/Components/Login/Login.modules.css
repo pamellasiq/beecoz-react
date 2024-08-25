@@ -1,3 +1,4 @@
+
 .login{
     display: flex;
     flex-direction: column;
@@ -41,6 +42,10 @@
     transition: .6s;
 }
 
+.input-login i{
+    font-size: 16px;
+}
+
 .input-login:hover{
     border-bottom: 2px solid #ECBC43;
 }
@@ -49,6 +54,11 @@
     outline: none;
     box-shadow: none;
     border-color: none;
+    color: #ECBC43;
+}
+
+.input-login input:hover{
+    color: #ECBC43;
 }
 
 .remember-login {
@@ -106,6 +116,7 @@
     justify-content: center;
     margin-top: 30px;
     gap: 10px;
+    margin-bottom: 100px;
 }
 
 .register p{
@@ -122,6 +133,9 @@
 
 @media screen and (min-width: 1100px) {
 
+    .items{
+        width: 100%;
+    }
     .form-login{
         width: 30%;
         display: flex;
@@ -132,6 +146,10 @@
     }
 
     .form-login .input-login input{
+        font-size: 16px;
+    }
+
+    .form-login .input-login i{
         font-size: 16px;
     }
 
@@ -170,6 +188,10 @@
     }
 
     .form-login .input-login input{
+        font-size: 16px;
+    }
+
+    .form-login .input-login i{
         font-size: 16px;
     }
 

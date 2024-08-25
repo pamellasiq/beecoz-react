@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./RegisterProf.modules.css";
+import { Link } from 'react-router-dom';
+import Header from "../Previous/Previous"
 
 function Prof() {
 
@@ -45,15 +47,33 @@ function Prof() {
 
   return (
     <>
-      <div className="header">
-        <i className="ri-arrow-left-line"></i>
-      </div>
+      <Header />
+      <div className="all">
       <form className="form-questionary">
         <div className="questionary">
-          <p>Bem-vindo à Beecoz!</p>
+          <h1>Bem-vindo à Beecoz!</h1>
           <p>Para começar, qual o seu nome?</p>
           <input type="text" className="input-re" placeholder="Nome completo" />
         </div>
+
+        <div className="questionary">
+          <p>Gênero</p>
+          <div className="radio">
+          <label>
+            <input type="radio" name="gender" value="Feminino"/>
+            Feminino
+          </label>
+          <label>
+            <input type="radio" name="gender" value="Masculino"/>
+            Masculino
+          </label>
+          <label>
+            <input type="radio" name="gender" value="outro"/>
+            Prefiro não dizer
+          </label>
+          </div>
+        </div>
+
         <div className="questionary">
           <p>E-mail</p>
           <input type="email" className="input-re" placeholder="nome@example.com" />
@@ -64,7 +84,7 @@ function Prof() {
         </div>
         <div className="questionary">
           <p>Crie uma senha</p>
-          <span>Para sua segurança, crie uma senha com letras maiúsculas, minúsculas e símbolos, etc.</span>
+          <span>*Para sua segurança, crie uma senha com letras maiúsculas, minúsculas e símbolos, etc.</span>
           <input type="password" className="input-re" placeholder="*****" />
         </div>
         <div className="questionary">
@@ -120,6 +140,7 @@ function Prof() {
         </div>
         <div className="questionary">
           <p>Escolha o tipo de documento</p>
+          <div className="radio">
           <label>
             <input
               type="radio"
@@ -140,6 +161,7 @@ function Prof() {
             />
             CNPJ
           </label>
+          </div>
         </div>
 
         <div className="questionary">
@@ -150,8 +172,20 @@ function Prof() {
             placeholder={placeholder}
           />
         </div>
+
+        <div className="questionary">
+          <p>Selecione a sua àrea de atuação</p>
+          <select id="area" name="area">
+          <option value="feminino">Eletrica</option>
+          <option value="masculino">Hidraúlica</option>
+          <option value="outro">Marcenaria</option>
+          <option value="nao-dizer">Serviços Gerais</option>
+          </select>
+        </div>
+
       </form>
-      <button><a href="../../Components/Register/Analise.jsx">Continuar</a></button>
+      <button><Link to="/analise" className="link">Cadastrar </Link></button>
+      </div>
     </>
   );
 }
