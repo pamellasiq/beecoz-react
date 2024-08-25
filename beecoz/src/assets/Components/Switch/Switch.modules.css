@@ -1,0 +1,76 @@
+.switch {
+    width: 30px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.switch.on {
+    background-color: #ffcc00; /* Cor do fundo quando está ligado */
+}
+
+.switch.off {
+    background-color: #333; /* Cor do fundo quando está desligado */
+}
+
+.switch-handle {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.switch.on .switch-handle {
+    transform: translateX(15px); /* Move a bolinha para a direita quando ligado */
+}
+
+.switch.off .switch-handle {
+    transform: translateX(0); /* Bolinha na posição inicial quando desligado */
+}
+
+
+  @media screen and (min-width: 1100px){
+    .switch{
+      width: 50px;
+      height: 30px;
+    }
+
+    .switch-handle {
+      width: 20px;
+      height: 20px;
+    }
+
+    .switch.off .switch-handle {
+      transform: translateX(3); /* Bolinha na posição inicial quando desligado */
+  }
+
+    .switch.on .switch-handle {
+      transform: translateX(22px); /* Move a bolinha para a direita quando ligado */
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1100px){
+
+  .switch{
+    width: 50px;
+    height: 30px;
+  }
+
+  .switch-handle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .switch.off .switch-handle {
+    transform: translateX(3); /* Bolinha na posição inicial quando desligado */
+}
+
+  .switch.on .switch-handle {
+    transform: translateX(22px); /* Move a bolinha para a direita quando ligado */
+}
+}

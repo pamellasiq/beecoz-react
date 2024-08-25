@@ -1,0 +1,152 @@
+.all{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-questionary{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-questionary h1{
+    color: #ECBC43;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-questionary p{
+    width: 100%;
+    color: #fff;
+}
+
+.form-questionary p:first-child{
+    margin-top: 20px;
+}
+
+.form-questionary span{
+    display: flex;
+    flex-wrap: wrap;
+    color: #aaaaaa;
+    font-size: 10px;
+}
+
+.form-questionary .input-re{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #aaaaaa;
+    font-size: 18px;
+    transition: .6s;
+}
+
+.form-questionary .input-re:focus{
+    outline: none;
+    border-bottom:2px solid #ECBC43;
+    color: #ECBC43;
+}
+
+.form-questionary .input-re:hover{
+    border-bottom:2px solid #ECBC43;
+}
+
+.form-questionary .radio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.radio label{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.radio input[type="radio"] {
+    accent-color: #ecbc43;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #444444;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+option {
+    padding: 10px;
+}
+
+select:focus{
+    outline: none;
+}
+
+button{
+    margin-top: 30px;
+
+    margin-bottom: 30px;
+}
+
+button .link{
+    width: 100%;
+    color: black;
+    transition: .6s;
+}
+
+button .link:hover{
+    color: #ecbc43;
+}
+
+
+
+@media screen and (min-width: 1100px) {
+    .form-questionary{
+        width: 40%;
+        font-size: 18px;
+    }
+
+    .form-questionary span{
+        font-size: 16px;
+    }
+
+    select{
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+    .form-questionary{
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .form-questionary span{
+        font-size: 18px;
+    }
+
+    select{
+        width: 40%;
+    }
+}
