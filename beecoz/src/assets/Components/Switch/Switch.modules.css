@@ -27,11 +27,13 @@
 }
 
 .switch.on .switch-handle {
-    transform: translateX(15px); /* Move a bolinha para a direita quando ligado */
+    transform: translateX(15px); 
+    background-color: black;/* Move a bolinha para a direita quando ligado */
 }
 
 .switch.off .switch-handle {
-    transform: translateX(0); /* Bolinha na posição inicial quando desligado */
+    transform: translateX(0);
+    background-color: #fff;/* Bolinha na posição inicial quando desligado */
 }
 
 
