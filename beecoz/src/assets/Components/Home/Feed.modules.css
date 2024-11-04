@@ -1,0 +1,65 @@
+.feed {
+    flex: 1;
+    padding: 1rem;
+    background-color: #333;
+    overflow-y: auto;
+  }
+  
+  .card {
+    background-color: #555;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    color: #eee;
+  }
+  
+  .card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .location, .time {
+    display: block;
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 0.2rem;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    margin: 1rem 0;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+
+  .like {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .like.liked {
+    color: #FFDC2E;
+  }
+  
+
+  @media screen and (min-width: 1100px){
+    .card{
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1100px){}

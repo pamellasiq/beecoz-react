@@ -1,0 +1,42 @@
+/* App container */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: #444;
+    color: #ccc;
+    padding: 1rem;
+    position: sticky;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    border-radius: none;
+  }
+  
+  .tab {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+  }
+

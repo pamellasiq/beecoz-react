@@ -1,0 +1,17 @@
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    background-color: #444;
+  }
+  .footer-nav span {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  i {
+    color: #AAAAAA;
+  }
+  i .i.active{
+    color: #FFDC2E;
+  }

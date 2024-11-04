@@ -6,6 +6,11 @@ import Register from './assets/Components/Register/Index';
 import Prof from './assets/Components/Register/RegisterProf';
 import Clie from './assets/Components/Register/RegisterCli'
 import Analise from './assets/Components/Register/Analise'
+import Home from './assets/Components/Home/Home'
+import Chat from './assets/Components/Home/Chat'
+import Perfil from './assets/Components/Home/Perfil'
+import Config from './assets/Components/Home/Config'
+
 function App() {
 
   return (
@@ -24,6 +29,10 @@ function App() {
           <Route path="/profissional" element={<Prof />} />
           <Route path="/cliente" element={<Clie />} />
           <Route path="/analise" element={<Analise />} />
+          <Route path="/home" element={<Home />}/>
+          <Route path="/chat" element={<Chat />}/>
+          <Route path= "/perfil" element={<Perfil />}/>
+          <Route path= "/config" element={<Config />}/>
         </Routes>
     </Router>
   );

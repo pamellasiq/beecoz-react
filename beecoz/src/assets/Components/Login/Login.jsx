@@ -23,7 +23,11 @@ function Login() {
                         <a>Esqueceu a senha?</a>
                     </div>
 
-                    <button className="btn-login">Login</button>
+                    <button className="btn-login">
+                        <Link  to="/home" className="link">
+                        Login
+                        </Link>
+                    </button>
                     <div className="icons">
                         <button className="social"><i className="ri-facebook-fill"></i>Facebook</button>
                         <button className="social"><i className="ri-google-fill"></i>Google</button>
